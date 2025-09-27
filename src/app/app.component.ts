@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title= 'devops-learning';
+  multiplyNumber = 2;
+
+  getMultiplyed(num: number) {
+    return num*2;
+  }
+
 }

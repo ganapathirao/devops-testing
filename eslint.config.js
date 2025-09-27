@@ -30,8 +30,7 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
-      "semi": ["error", "always"],
-      "indent": ["error", 2],                               // 2-space indentation
+      "semi": ["error", "always"],                           // 2-space indentation
       "space-before-function-paren": ["error", "always"],   // space before function parentheses
       "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
       "comma-spacing": ["error", { "before": false, "after": true }]
