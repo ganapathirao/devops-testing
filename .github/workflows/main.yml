@@ -1,0 +1,31 @@
+name: Lint Check
+
+# Trigger on pull request to main branch
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Run ESLint
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm ci
+
+      # Step 4: Run ESLint
+      - name: Run lint
+        run: npm run lint
