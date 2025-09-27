@@ -31,7 +31,7 @@ module.exports = tseslint.config(
         },
       ],
       "semi": ["error", "always"],                           // 2-space indentation
-      "space-before-function-paren": ["error", "always"],   // space before function parentheses
+      "space-before-blocks": ["error", "always"],   // space before function parentheses
       "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
       "comma-spacing": ["error", { "before": false, "after": true }]
     },
